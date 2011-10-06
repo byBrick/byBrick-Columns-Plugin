@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: byBrick Columns
-Plugin URI: http://www.bybrick.se/
+Plugin URI: https://github.com/byBrick/byBrick-Columns-Plugin
 Description: A plugin that enables for column based shortcodes.
 Version: 1.0
 Author: byBrick
