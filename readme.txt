@@ -16,6 +16,8 @@ This plugin enables you to divide content in the TinyMCE editor into columns tha
 
 == Installation ==
 
+First of all, this plugin lives here on Github for you who wish to fork, develop and/or work with the code made available here. If you just want the plugin on your existing WordPress site, you can search for 'byBrick Columns' on the WordPress Plugin repository and install it from there. That way you'll also get any available updates right in your WordPress Dashboard.
+
 It's quite simple;
 
 1. Upload the 'bybrick-columns' folder to the '/wp-content/plugins/' directory
