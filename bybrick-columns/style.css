@@ -20,20 +20,39 @@
 .four_fifth,
 .one_sixth,
 .five_sixth {
-    float: left;
-    margin-bottom: 20px;
-    margin-right: 4%;
-    position: relative;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 4%;
+	position: relative;
 }
 .column-last {
-    clear: right;
-    margin-right: 0!important;
+	clear: right;
+	margin-right: 0!important;
 }
 .clear {
-    clear: both;
-    display: block;
-    font-size: 0;
-    height: 0;
-    line-height: 0;
-    width: 100%;
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width: 100%;
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	.one_half,
+	.one_third,
+	.two_third,
+	.three_fourth,
+	.one_fourth,
+	.one_fifth,
+	.two_fifth,
+	.three_fifth,
+	.four_fifth,
+	.one_sixth,
+	.five_sixth {
+		width: 100%;
+		margin-bottom: 0;
+		margin-right: 0;
+	}
 }

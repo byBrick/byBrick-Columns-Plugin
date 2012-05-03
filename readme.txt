@@ -3,8 +3,8 @@ Contributors: davidpaulsson, sakjur
 Donate link: -
 Tags: column, columns
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: trunk
+Tested up to: 3.3.2
+Stable tag: 1.1
 
 A plugin that enables for column based shortcodes.
 
@@ -15,8 +15,6 @@ A small but simple plugin that enables shortcode support to create columns direc
 This plugin enables you to divide content in the TinyMCE editor into columns that are either one half, one third, two third, three fourth, one fourth, one fifth, two fifth, three fifth, four fifth, one sixth or five sixth wide.
 
 == Installation ==
-
-First of all, this plugin lives here on Github for you who wish to fork, develop and/or work with the code made available here. If you just want the plugin on your existing WordPress site, you can search for 'byBrick Columns' on the WordPress Plugin repository and install it from there. That way you'll also get any available updates right in your WordPress Dashboard.
 
 It's quite simple;
 
@@ -50,6 +48,9 @@ All width is percentage based, so you should be safe!
 Don't worry son! The style file won't load unless it's needed.
 
 == Changelog ==
+
+= 1.1 =
+* Added support for responsive wed design. Meaning; any columns you've created will wrap below each other and be 100% width if the screen width is a minimum of 480px (standard iPhone in landscape mode).
 
 = 1.0 =
 * Launch baby, launch!

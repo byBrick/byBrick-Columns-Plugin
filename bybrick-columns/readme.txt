@@ -3,8 +3,8 @@ Contributors: davidpaulsson, sakjur
 Donate link: -
 Tags: column, columns
 Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: trunk
+Tested up to: 3.3.2
+Stable tag: 1.1
 
 A plugin that enables for column based shortcodes.
 
@@ -48,6 +48,9 @@ All width is percentage based, so you should be safe!
 Don't worry son! The style file won't load unless it's needed.
 
 == Changelog ==
+
+= 1.1 =
+* Added support for responsive wed design. Meaning; any columns you've created will wrap below each other and be 100% width if the screen width is a minimum of 480px (standard iPhone in landscape mode).
 
 = 1.0 =
 * Launch baby, launch!
