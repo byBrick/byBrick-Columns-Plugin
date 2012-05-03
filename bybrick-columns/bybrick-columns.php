@@ -3,7 +3,7 @@
 Plugin Name: byBrick Columns
 Plugin URI: https://github.com/byBrick/byBrick-Columns-Plugin
 Description: A plugin that enables for column based shortcodes.
-Version: 1.1
+Version: 1.2
 Author: byBrick
 Author URI: http://www.bybrick.se/
 License: GNU General Public License (GPLv3)
