@@ -4,7 +4,7 @@ Donate link: -
 Tags: column, columns
 Requires at least: 3.0
 Tested up to: 3.3.2
-Stable tag: 1.2
+Stable tag: 1.3
 
 A plugin that enables for column based shortcodes.
 
@@ -48,6 +48,9 @@ All width is percentage based, so you should be safe!
 Don't worry son! The style file won't load unless it's needed.
 
 == Changelog ==
+
+= 1.3 =
+* This plugin now features a button that hooks right onto your TinyMCE editor. Click the button, enter the desired number of columns and voilá! No need to enter the shortcodes by hand ever again (if you wish to use something, for example, like [four_fifth] you'll still need to enter those by hand). Oh; and the CSS file is now minified.
 
 = 1.2 =
 * Fixed a bug with [one_fourth] columns not working. Thanks jmd4eva for noticing.

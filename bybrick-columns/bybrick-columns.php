@@ -3,7 +3,7 @@
 Plugin Name: byBrick Columns
 Plugin URI: https://github.com/byBrick/byBrick-Columns-Plugin
 Description: A plugin that enables for column based shortcodes.
-Version: 1.2
+Version: 1.3
 Author: byBrick
 Author URI: http://www.bybrick.se/
 License: GNU General Public License (GPLv3)
@@ -33,7 +33,7 @@ function bb_include_style_if_needed($posts) {
 	}
 
 	if ($bb_style_required) {
-		$style = plugins_url('/style.css', __FILE__);
+		$style = plugins_url('/bb-columns-style.min.css', __FILE__);
 	    wp_enqueue_style("bb-column-style", $style);
 	} 
 
@@ -139,3 +139,28 @@ function bb_make_shortcodes() {
 };
 
 bb_make_shortcodes();
+
+/*
+Button in TinyMCE
+*/
+
+function register_button( $buttons ) {
+	array_push( $buttons, "|", "columns" );
+	return $buttons;
+}
+function add_plugin( $plugin_array ) {
+	$plugin_array['columns'] = plugins_url('/bybrick-columns.js', __FILE__);
+	return $plugin_array;
+}
+
+function my_recent_posts_button() {
+	if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') ) {
+		return;
+	}
+	if ( get_user_option('rich_editing') == 'true' ) {
+		add_filter( 'mce_external_plugins', 'add_plugin' );
+		add_filter( 'mce_buttons', 'register_button' );
+	}
+}
+
+add_action('init', 'my_recent_posts_button');
