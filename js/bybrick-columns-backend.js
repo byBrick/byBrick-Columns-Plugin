@@ -3,7 +3,7 @@
 		init : function(ed, url) {
 			ed.addButton('columns', {
 				title : 'byBrick Columns',
-				image : url+'/ico-columns.png',
+				image : url+'/img/ico-columns.png',
 				onclick : function() {
 					var columns = prompt("Number of columns", "2");
 						if (columns != null && columns == '1')
