@@ -55,7 +55,7 @@ function bb_three_fourth_last( $atts, $content = null ) {
 }
 
 function bb_one_fifth( $atts, $content = null ) {
-   return '<div class="one_fift bbcolh">' . do_shortcode($content) . '</div>';
+   return '<div class="one_fifth bbcolh">' . do_shortcode($content) . '</div>';
 }
 
 function bb_one_fifth_last( $atts, $content = null ) {
